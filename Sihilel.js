@@ -635,7 +635,7 @@ if (q.includes('--help')) return reply(examkosong)
       {
        buttonId: `${prefix + command}`, 
        buttonText: {
-        displayText: 'Hiruu Mine Again⛏️'
+        displayText: 'Hiruu, Mine Again⛏️'
       }, type: 1},
     ]
     let buttonMessage = {
@@ -2028,7 +2028,7 @@ break
 	    }
 	    break
 	    case 'yts': case 'ytsearch': case 'getyt': {
-                if (!text) return replay(`Example : ${prefix + command} Anime Story Whatsapp`)
+                if (!text) return replay(`Example : ${prefix + command} blackpink`)
                 let yts = require("yt-search")
                 let search = await yts(text)
                 let teks = 'YouTube Search\n\n Result From '+text+'\n\n'
@@ -2040,7 +2040,7 @@ break
             }
             break
         case 'google': {
-                if (!text) return reply(`Example : ${prefix + command} gojo shiba inu`)
+                if (!text) return reply(`Example : ${prefix + command} love`)
                 let google = require('google-it')
                 google({'query': text}).then(res => {
                 let teks = `Google Search Title : ${text}\n\n`
@@ -2054,7 +2054,7 @@ break
                 }
                 break
         case 'gimage': case 'googleimage': case 'img': {
-        if (!text) return reply(`Example : ${prefix + command} gojo`)
+        if (!text) return reply(`Example : ${prefix + command} Hiruu`)
         let gis = require('g-i-s')
         gis(text, async (error, result) => {
         n = result
@@ -2076,7 +2076,7 @@ break
         }
         break
 	    case 'play': case 'song': case 'ytplay': case 'music': case 'yt': case 'video': {
-                if (!text) return reply(`Example : ${prefix + command} Stay`)
+                if (!text) return reply(`Example : ${prefix + command} Hiruu`)
                 let yts = require("yt-search")
                 let search = await yts(text)
                 let anu = search.videos[Math.floor(Math.random() * search.videos.length)]
@@ -2356,13 +2356,13 @@ case 'webtonsearch': case 'webtoon':
             }
             break
             case '3dchristmas': case '3ddeepsea': case 'americanflag': case '3dscifi': case '3drainbow': case '3dwaterpipe': case 'halloweenskeleton': case 'sketch': case 'bluecircuit': case 'space': case 'metallic': case 'fiction': case 'greenhorror': case 'transformer': case 'berry': case 'thunder': case 'magma': case '3dcrackedstone': case '3dneonlight': case 'impressiveglitch': case 'naturalleaves': case 'fireworksparkle': case 'matrix': case 'dropwater':  case 'harrypotter': case 'foggywindow': case 'neondevils': case 'christmasholiday': case '3dgradient': case 'blackpink': case 'gluetext': {
-                if (!text) return reply(`Enter Text, Example : ${prefix + command} Xeon`)
+                if (!text) return reply(`Enter Text, Example : ${prefix + command} Sihilel`)
                 reply(mess.wait)
                 GojoMdNx.sendMessage(m.chat, { image: { url: api('zenz', '/textpro/' + command, { text: text }, 'apikey') }, caption: `Text Pro ${command}` }, { quoted: m})
 	    }
             break
 	    case 'nomerhoki': case 'nomorhoki': {
-                if (!Number(text)) return reply(`Example : ${prefix + command} 916909137213`)
+                if (!Number(text)) return reply(`Example : ${prefix + command} 94704101989`)
                 let anu = await primbon.nomer_hoki(Number(text))
                 if (anu.status == false) return reply(anu.message)
                 GojoMdNx.sendText(m.chat, `🦄 *Phone Number :* ${anu.message.nomer_hp}\n🦄 *Shuzi Angka Figures :* ${anu.message.angka_shuzi}\n🦄 *Positive Energy :*\n- Riches : ${anu.message.energi_positif.kekayaan}\n- Health : ${anu.message.energi_positif.kesehatan}\n- Love : ${anu.message.energi_positif.cinta}\n- Stability : ${anu.message.energi_positif.kestabilan}\n- Percentage : ${anu.message.energi_positif.persentase}\n🦄 *Negative Energy :*\n- Dispute : ${anu.message.energi_negatif.perselisihan}\n- Lost : ${anu.message.energi_negatif.kehilangan}\n- Catastrophe : ${anu.message.energi_negatif.malapetaka}\n- Destruction : ${anu.message.energi_negatif.kehancuran}\n- Percentage : ${anu.message.energi_negatif.persentase}`, m)
@@ -3174,7 +3174,7 @@ View List Of Messages With ${prefix}listmsg`)
                 reply('Successful Change To Public Usage')
             }
             break
-            case 'self': {
+            case 'self': case 'private': {
                 if (!isCreator) return replay(`${mess.owner}`)
                 GojoMdNx.public = false
                 reply('Successful Change To Self Usage')
@@ -3244,7 +3244,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             }
             break
-            case 'owner': case 'creator': {
+            case 'owner': case 'creator': case 'sihilel': case 'hiruu': {
                 GojoMdNx.sendContact(m.chat, global.owner, m)
             }
             break
@@ -3302,15 +3302,15 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ┌┤✑  Dark-Hiruu is alive now 😌💯
 ││✑  🌝🖐️!!
 │└───────────────┈ ⳹
-│ 「 HIRUU QUEEN BOT INFO 」
-│✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│✙ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-│✙ 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│✙ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│✙ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
+│ 「𝐇𝐈𝐑𝐔𝐔 𝐐𝐔𝐄𝐄𝐍 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎👩‍💻 」
+│✙ 🔥𝐒𝐏𝐄𝐄𝐃 : ${latensie.toFixed(4)} miliseconds
+│✙ 🔥𝐑𝐔𝐍 𝐓𝐈𝐌𝐄 : ${runtime(process.uptime())}
+│✙ 🔥𝐁𝐎𝐓 𝐍𝐀𝐌𝐄 : ${global.botname}
+│✙ 🔥𝐎𝐖𝐍𝐄𝐑 𝐍𝐀𝐌𝐄 : ${global.ownername}
+│✙ 🔥𝐎𝐖𝐍𝐄𝐑 𝐍𝐔𝐌𝐁𝐄𝐑 : ${global.owner}
+│✙ 🔥𝐇𝐎𝐒𝐓 𝐍𝐀𝐌𝐄 : ${os.hostname()}
+│✙ 🔥𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌 : ${os.platform()}
+│✙ 🔥𝐓𝐎𝐓𝐀𝐋 𝐔𝐒𝐄𝐑 : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
    │✑  HIRUU QUEEN BOT CREATED BY SIHILEL 🦄💫
    └───────────────┈ ⳹`,
@@ -3362,15 +3362,15 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 └┬❖ 「 ${pushname} 」
 ┌┤✑  How Are You 🙏⚡
 │└───────────────┈ ⳹
-│ 「 HIRUU QUEEN BOT INFO 」
-│✙ 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
-│✙ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-│✙ 𝗕𝗼𝘁 𝗡𝗮𝗺𝗲 : ${global.botname}
-│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝗮𝗺𝗲 : ${global.ownername}
-│✙ 𝗢𝘄𝗻𝗲𝗿 𝗡𝘂𝗺𝗯𝗲𝗿 : ${global.owner}
-│✙ 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : ${os.hostname()}
-│✙ 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
-│✙ 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length}
+│ 「 𝐇𝐈𝐑𝐔𝐔 𝐐𝐔𝐄𝐄𝐍 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 」
+│✙ 🔥𝐒𝐏𝐄𝐄𝐃 : ${latensie.toFixed(4)} miliseconds
+│✙ 🔥𝐑𝐔𝐍𝐓𝐈𝐌𝐄 : ${runtime(process.uptime())}
+│✙ 🔥𝐁𝐎𝐓 𝐆𝐑𝐎𝐔𝐏 : ${global.botname}
+│✙ 🔥𝐎𝐖𝐍𝐄𝐑 𝐍𝐀𝐌𝐄 : ${global.ownername}
+│✙ 🔥𝐎𝐖𝐍𝐄𝐑 𝐍𝐔𝐌𝐁𝐄𝐑 : ${global.owner}
+│✙ 🔥𝐇𝐎𝐒𝐓 𝐍𝐀𝐌𝐄 : ${os.hostname()}
+│✙ 🔥𝐏𝐋𝐀𝐓𝐅𝐎𝐑𝐌 : ${os.platform()}
+│✙ 🔥𝐓𝐎𝐓𝐀𝐋 𝐔𝐒𝐄𝐑 : ${Object.keys(global.db.data.users).length}
 └┬──────────────┈ ⳹
    │✑  HIRUU QUEEN BOT CREATED BY SIHILEL 🦄💫
    └───────────────┈ ⳹`,
@@ -3436,12 +3436,12 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"title": "Owner Menu",
 										"description": "Displays The List Of Owner Features",
 										"rowId": `${prefix}ownermenu`
-										},
+									},
 									{
 										"title": "Group Menu",
 										"description": "Displays The List Of Main Features",
 										"rowId": `${prefix}groupmenu`
-										},
+									},
 									{
 										"title": "Rpg Menu",
 										"description": "Displays The List Of Rpg Features",
@@ -3802,6 +3802,7 @@ break
 case 'mainmenu':
 var unicorn = await getBuffer(picak+'Main Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔═♥️「 MAIN 」
 ┃╠🌹🦄 ${prefix}alive
@@ -3824,6 +3825,7 @@ break
 case 'grupmenu': case 'groupmenu':
 var unicorn = await getBuffer(picak+'Group Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔═♥️「 GROUP 」	        
 ┃╠🌹🦄${prefix}grouplink
@@ -3853,6 +3855,7 @@ break
 case 'rpgmenu':
 var unicorn = await getBuffer(picak+'Rpg Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔═♥️「 RPG 」	        
 ┃╠🌹🦄${prefix}hunting
@@ -3871,6 +3874,7 @@ break
 case 'funmenu':
 var unicorn = await getBuffer(picak+'Fun Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔═♥️「 FUN 」	        
 ┃╠🌹🦄 ${prefix}how [text
@@ -3924,6 +3928,7 @@ break
 case 'ownermenu':
 var unicorn = await getBuffer(picak+'Owner Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔═♥️「 OWNER 」	        
 ┃╠🌹🦄${prefix}grouplink
@@ -3952,6 +3957,7 @@ break
 case 'downloadmenu':
 var unicorn = await getBuffer(picak+'Downloader Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔═♥️「 DOWNLOADER 」	        
 ┃╠🌹🦄${prefix}ytmp3 [url|quality]
@@ -3967,6 +3973,7 @@ break
 case 'searchmenu':
 var unicorn = await getBuffer(picak+'Search Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔══♥️「 SEARCHER 」	        
 ┃╠🌹🦄${prefix}play [query]
@@ -3986,6 +3993,7 @@ break
 case 'randommenu':
 var unicorn = await getBuffer(picak+'Random Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔══♥️「 RANDOM 」	        
 ┃╠🌹🦄${prefix}coffee
@@ -3997,6 +4005,7 @@ break
 case 'randomanimemenu':
 var unicorn = await getBuffer(picak+'Random Anime Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔♥️「 RANDOM ANIME 」	        
 ┃╠🌹🦄${prefix}loli
@@ -4032,6 +4041,7 @@ break
 case 'textpromenu':
 var unicorn = await getBuffer(picak+'Text Pro Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔═♥️「 TEXT PRO 」	        
 ┃╠🌹🦄 ${prefix}3dchristmas [txt]
@@ -4071,6 +4081,7 @@ break
 case 'convertmenu':
 var unicorn = await getBuffer(picak+'Converter Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔══♥️「 CONVERTER 」	        
 ┃╠🌹🦄 ${prefix}toimage [reply stick]
@@ -4090,6 +4101,7 @@ break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔═══♥️「 DATABASE 」	        
 ┃╠🌹🦄 ${prefix}setcmd
@@ -4106,6 +4118,7 @@ break
 case 'databasemenu':
 var unicorn = await getBuffer(picak+'Database Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔══♥️「 ANONYMOUS CHAT 」	        
 ┃╠🌹🦄${prefix}anonymous
@@ -4118,6 +4131,7 @@ break
 case 'islamicmenu':
 var unicorn = await getBuffer(picak+'Islamic Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔══♥️「 ISLAMIC 」	        
 ┃╠🌹🦄${prefix}juzamma
@@ -4127,6 +4141,7 @@ break
 case 'voicechangermenu':
 var unicorn = await getBuffer(picak+'Voice Changer Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔══♥️「 VOICE CHANGER 」	        
 ┃╠🌹🦄${prefix}bass [reply aud]
@@ -4146,6 +4161,7 @@ break
 case 'horoscopemenu':
 var unicorn = await getBuffer(picak+'Horoscope Menu')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
+༺HIRUU༒QUEEN༻
 ┏━「 ${botname} 」━━⭓ 
 ┃╔══♥️「 HOROSCOPE 」	        
 ┃╠🌹🦄${prefix}nomorhoki (indo)
@@ -4184,8 +4200,9 @@ break
 case 'thanksto': case 'tqto': case 'tqtt':
 var unicorn = await getBuffer(picak+'Developer')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
-Thanks to Me ( Sihilel)
-And Again Me (King Sihilel 🎉) 🦄 Who Helped Assemble This Sexy Script !!!`,unicorn, [{"urlButton": {"displayText": "MY WEB😈","url": `${myweb}`}},{"urlButton": {"displayText": "BOT GROUP🎠","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⚡SIHILEL⚡","id": 'owner'}}] )
+Thanks to  ( 𝐇𝐈𝐑𝐔𝐔𝐔)
+here is support to create this bot🔥🔥 he is my girl friend 😉😘 I love you hiruu😘😘
+!!!`,unicorn, [{"urlButton": {"displayText": "MY WEB😈","url": `${myweb}`}},{"urlButton": {"displayText": "BOT GROUP🎠","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⚡SIHILEL⚡","id": 'owner'}}] )
 break
             default:
                 if (budy.startsWith('=>')) {
