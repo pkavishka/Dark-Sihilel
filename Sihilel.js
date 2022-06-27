@@ -1159,7 +1159,7 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
                     await GojoMdNx.sendButtonText(m.chat, buttons, jawab, GojoMdNx.user.name, m, {mentions: ments})
             }
             break
-            case 'couple': {
+            case 'couple': case 'කපල්': {
             if (!m.isGroup) return replay(`${mess.group}`)
             let member = participants.map(u => u.id)
             let orang = member[Math.floor(Math.random() * member.length)]
@@ -1187,14 +1187,14 @@ GojoMdNx.sendMessage(from, { text: `Question : Is ${q}\nAnswer : ${kah}` }, { qu
 GojoMdNx.sendMessage(from, { text: `Question : What ${q}\nAnswer : ${kahk}` }, { quoted: m })
 
 					break
-case 'can':
+case 'can': case 'පුලුවන්'
 				if (!text) return replay(`Use Text, Example : ${prefix + command} you fuck her lol `)
 					const bisa = [`Can`,`Can't`,`Cannot`,`Of Course You Can!!!`]
 					const ga = bisa[Math.floor(Math.random() * bisa.length)]
 GojoMdNx.sendMessage(from, { text: `Question : Can ${q}\nAnswer : ${ga}` }, { quoted: m })
 
 					break
-case 'how':
+case 'how': case 'කොහොමද':
 				if (!text) return replay(`Use Text, Example : ${prefix + command} is my face`)
 					const gimana = [`It's Okay`, `It's Difficult Bro`, `Sorry Bot Can't Answer`, `Try Searching On Google`,`Holy Cow! Really???`,`Dizzy Ah`,`Ohhh I See:(`,`The Patient, Boss:(`,`How Are You?`]
 					const ya = gimana[Math.floor(Math.random() * gimana.length)]
@@ -1345,7 +1345,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 GojoMdNx.sendMessage(m.chat, reactionMessage)
             }
             break  
-            case 'join': {
+            case 'join': case 'ජොයින්': {
                 if (!isCreator) return replay(`${mess.owner}`)
                 if (!text) return replay(`Enter The Group Link!`)
                 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) return replay(`Invalid Link!`)
@@ -1354,7 +1354,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 await GojoMdNx.groupAcceptInvite(result).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
             }
             break
-            case 'leave': {
+            case 'leave': case 'ලීව්': {
                 if (!isCreator) return replay(`${mess.owner}`)
                 await GojoMdNx.groupLeave(m.chat).then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
             }
@@ -1367,7 +1367,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
           reply(`Exif Has Been Successfully Changed to\n\n🦄 Packname : ${global.packname}\n🦄 Author : ${global.author}`)
             }
             break
-	case 'kick': {
+	case 'kick': case 'කික්':{
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
@@ -1375,7 +1375,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
 		await GojoMdNx.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'add': {
+	case 'add': case 'ඇඩ්': {
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
@@ -1383,7 +1383,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
 		await GojoMdNx.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'promote': {
+	case 'promote': case 'admin': case 'ඇඩ්මින්': {
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
@@ -1391,7 +1391,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
 		await GojoMdNx.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'demote': {
+	case 'demote': case 'member': case 'මෙම්බර්': {
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
@@ -1399,7 +1399,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
 		await GojoMdNx.groupParticipantsUpdate(m.chat, [users], 'demote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-        case 'block': {
+        case 'block': case 'බ්ලොක්': {
 		if (!isCreator) return replay(`${mess.owner}`)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 		await GojoMdNx.updateBlockStatus(users, 'block').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
@@ -1411,7 +1411,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
 		await GojoMdNx.updateBlockStatus(users, 'unblock').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	    case 'setname': case 'setgcname': case 'setsubject': {
+	    case 'setname': case 'setgcname': case 'setsubject': case 'gp නම': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) replay(`${mess.admin}`)
@@ -1427,7 +1427,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 await GojoMdNx.groupUpdateDescription(m.chat, text).then((res) => reply(mess.success)).catch((err) => reply(jsonformat(err)))
             }
             break
-          case 'setbotpp': {
+          case 'setbotpp': case 'pp':{
                 if (!isCreator) return replay(`${mess.owner}`)
                 if (!quoted) return replay(`Send/Reply Image With Caption ${prefix + command}`)
                 if (!/image/.test(mime)) return replay(`Send/Reply Image With Caption ${prefix + command}`)
@@ -1437,7 +1437,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 reply(mess.success)
                 }
                 break
-           case 'setgrouppp': case 'setgruppp': case 'setgcpp': {
+           case 'setgrouppp': case 'setgruppp': case 'setgcpp': case 'gppp': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
                 if (!quoted) return replay(`Send/Reply Image With Caption ${prefix + command}`)
@@ -1448,7 +1448,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 reply(mess.success)
                 }
                 break
-            case 'tagall': {
+            case 'tagall': case 'ටැග්ඕල්': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
@@ -1481,7 +1481,7 @@ let teks = `╚»˙·٠•●♥ Tag All By Hiruu ♥●•٠·˙«╝
                 reply(teks)
 	    }
 	    break
-               case 'vote': {
+               case 'vote': csse 'වොට්': {
             if (!m.isGroup) return replay(`${mess.group}`)
             if (m.chat in vote) replay(`_There Are Still Votes In This Chat!_\n\n*${prefix}delvote* - To Delete Vote Session`)
             if (!text) return replay(`Enter Reason For Vote, Example: *${prefix + command} Handsome Owner*`)
@@ -1679,7 +1679,7 @@ break
             }
             }
             break
-            case 'antilink': {
+            case 'antilink': case 'ඇන්ටි ලින්ක්': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
@@ -1721,7 +1721,7 @@ break
                 }
              }
              break
-            case 'linkgroup': case 'linkgc': case 'gclink': case 'grouplink': case 'invite': {
+            case 'linkgroup': case 'linkgc': case 'gclink': case 'grouplink': case 'invite': case 'gp ලින්ක්': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 let response = await GojoMdNx.groupInviteCode(m.chat)
                 GojoMdNx.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\n${groupMetadata.subject} Group Link`, m, { detectLink: true })
@@ -1864,7 +1864,7 @@ break
                     GojoMdNx.sendText(m.chat, 'Online List:\n\n' + online.map(v => '🦄 @' + v.replace(/@.+/, '')).join`\n`, m, { mentions: online })
              }
              break
-            case 'sticker': case 's': case 'stickergif': case 'sgif': {
+            case 'sticker': case 's': case 'stickergif': case 'sgif': case 'ස්ටිකර්': {
             if (!quoted) return replay(`Reply Video/Image With Caption ${prefix + command}`)
             reply(mess.wait)
                     if (/image/.test(mime)) {
@@ -1920,7 +1920,7 @@ break
 		}
 	    }
 	    break
-            case 'toimage': case 'toimg': {
+            case 'toimage': case 'toimg': case 'photo': case 'පොටෝ': {
                 if (!quoted) return reply(`Reply Image`)
                 if (!/webp/.test(mime)) reply(`Reply Sticker With Caption *${prefix + command}*`)
                 reply(mess.wait)
@@ -2676,7 +2676,7 @@ case 'webtonsearch': case 'webtoon':
                 }
             }
             break
-	        case 'tiktokd': case 'tiktoknowmx': case 'tiktok': {
+	        case 'tiktokd': case 'tiktoknowmx': case 'tiktok': case 'ටික්ටොක්': {
                 if (!text) return reply(`Enter Query Link!`)
                 reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/downloader/tiktok', { url: text }, 'apikey'))
@@ -3244,7 +3244,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
             }
             }
             break
-            case 'owner': case 'creator': case 'sihilel': case 'hiruu': {
+            case 'owner': case 'creator': case 'sihilel': case 'hiruu': case 'සිහිලැල්': case 'හිරූ': {
                 GojoMdNx.sendContact(m.chat, global.owner, m)
             }
             break
@@ -3277,7 +3277,7 @@ reply("Success Changing Menu To "+q)
 break
                     case 'bug': case 'report': {
                     	if(!text) return reply(`Enter The Bug\n\nExample: ${command} Menu Error`)
-                    	GojoMdNx.sendMessage(`918129624395@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
+                    	GojoMdNx.sendMessage(`94704101989@s.whatsapp.net`, {text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
 Report Message: ${text}` })
 reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, If You Play With This, Use This Feature Again And Again For No Reason, You Will Be Blocked For Sure !`)
                     }
@@ -3286,7 +3286,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 		GojoMdNx.sendMessage(from, { text: `Try for this!\n༺HIRUU༒QUEEN༻\n\nhttps://sites.google.com/view/hiruu-queen-bot/home` }, { quoted: m })
 	}
                     break
-                     case 'alive': case 'bot': case 'hiruu bot':{
+                     case 'alive': case 'bot': case 'hiruu bot': case 'ඇලිව්': {
                            	timestampe = speed();
 latensie = speed() - timestampe
  anu = ` `
@@ -3302,7 +3302,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 ┌┤✑  Dark-Hiruu is alive now 😌💯
 ││✑  🌝🖐️!!
 │└───────────────┈ ⳹
-│ 「𝐇𝐈𝐑𝐔𝐔 𝐐𝐔𝐄𝐄𝐍 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎👩‍💻 」
+│ 「𝙃𝙄𝙍𝙐𝙐 𝙌𝙐𝙀𝙀𝙉 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 👩‍💻 」
 │✙ 🔥𝐒𝐏𝐄𝐄𝐃 : ${latensie.toFixed(4)} miliseconds
 │✙ 🔥𝐑𝐔𝐍 𝐓𝐈𝐌𝐄 : ${runtime(process.uptime())}
 │✙ 🔥𝐁𝐎𝐓 𝐍𝐀𝐌𝐄 : ${global.botname}
@@ -3346,7 +3346,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 GojoMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
 break
-            case 'list': case 'menu': {
+            case 'list': case 'menu': 'මෙනු': {
             	timestampe = speed();
 latensie = speed() - timestampe
                 anu = ``
@@ -3421,7 +3421,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
 										"title": "Main Menu",
 										"description": "Displays The List Of Main Features",
 										"rowId": `${prefix}mainmenu`
-									}
+									},
 								]
 							},
 							{
