@@ -1187,7 +1187,7 @@ GojoMdNx.sendMessage(from, { text: `Question : Is ${q}\nAnswer : ${kah}` }, { qu
 GojoMdNx.sendMessage(from, { text: `Question : What ${q}\nAnswer : ${kahk}` }, { quoted: m })
 
 					break
-case 'can': case 'පුලුවන්'
+case 'can': case 'පුලුවන්':
 				if (!text) return replay(`Use Text, Example : ${prefix + command} you fuck her lol `)
 					const bisa = [`Can`,`Can't`,`Cannot`,`Of Course You Can!!!`]
 					const ga = bisa[Math.floor(Math.random() * bisa.length)]
@@ -3362,7 +3362,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 └┬❖ 「 ${pushname} 」
 ┌┤✑  How Are You 🙏⚡
 │└───────────────┈ ⳹
-│ 「 𝐇𝐈𝐑𝐔𝐔 𝐐𝐔𝐄𝐄𝐍 𝐁𝐎𝐓 𝐈𝐍𝐅𝐎 」
+│ 「 𝙃𝙄𝙍𝙐𝙐 𝙌𝙐𝙀𝙀𝙉 𝘽𝙊𝙏 𝙄𝙉𝙁𝙊 👩‍💻 」
 │✙ 🔥𝐒𝐏𝐄𝐄𝐃 : ${latensie.toFixed(4)} miliseconds
 │✙ 🔥𝐑𝐔𝐍𝐓𝐈𝐌𝐄 : ${runtime(process.uptime())}
 │✙ 🔥𝐁𝐎𝐓 𝐆𝐑𝐎𝐔𝐏 : ${global.botname}
@@ -3536,7 +3536,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
             case 'sc': case 'script': {
-                reply(`GitHub : https://github.com/Dark-Sihilel/Dark-Hiruu\n Dont Forget To Give Star\n\nBot Group : ${myweb}\nCome and join with us😈🚀`)
+                reply(`GitHub : https://github.com/Hiruu-Queen/Dark-Hiruu\n Dont Forget To Give Star\n\nBot Group : ${sc}\nCome and join with us😈🚀`)
             }
             break
 case 'allmenu': {
@@ -4197,10 +4197,10 @@ await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
 ┃╚═════════════🦄💫
 ┗━━「 ${pushname} 」━⭓`,unicorn, [{"urlButton": {"displayText": "MY WEB😈","url": `${myweb}`}},{"urlButton": {"displayText": "BOT GROUP🎠","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⚡SIHILEL⚡","id": 'owner'}}] )
 break
-case 'thanksto': case 'tqto': case 'tqtt':
+case 'thanksto': case 'tqto': case 'tqtt': case 'thank you': case 'tnx':
 var unicorn = await getBuffer(picak+'Developer')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
-Thanks to  ( 𝐇𝐈𝐑𝐔𝐔𝐔)
+I am Sihilel 😉🔥 Thanks to  ( 𝐇𝐈𝐑𝐔𝐔𝐔😘)
 here is support to create this bot🔥🔥 he is my girl friend 😉😘 I love you hiruu😘😘
 !!!`,unicorn, [{"urlButton": {"displayText": "MY WEB😈","url": `${myweb}`}},{"urlButton": {"displayText": "BOT GROUP🎠","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⚡SIHILEL⚡","id": 'owner'}}] )
 break
