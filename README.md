@@ -4,7 +4,7 @@
 
 ## 💯Hiruu-Queen-Bot💯
 	
-## [![Typing SVG]("https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines" =𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+🔥༺𝐇𝐈𝐑𝐔𝐔༒𝐐𝐔𝐄𝐄𝐍༻🔥+𝗕𝗢𝗧.;Created+By:+𝐒𝐈𝐇𝐈𝐋𝐄𝐋;Helped+By:+𝐇𝐈𝐑𝐔𝐔;සුභ+දවසක්😜;😉ඉතිං+කොහොමද🤔;🎠මොකද+කරන්නෙ🎧;බොට්+ගැන+මොකක්+හරි+ප්‍රශ්නයක්ද😳;මැසේජ්+එකක්+දාන්න😉;94704101989)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?size=25&color=FF1B25&background=928DFF&lines=%F0%9F%94%A5%E0%BC%BAHIRUU%E0%BC%92QUEEN%E0%BC%92BOT%E0%BC%BB%F0%9F%94%A5;Created+by+SIHILEL;Helped+by+HIRUU;%E0%B7%83%E0%B7%94%E0%B6%B7+%E0%B6%AF%E0%B7%80%E0%B7%83%E0%B6%9A%E0%B7%8A%F0%9F%98%89;%E0%B6%89%E0%B6%AD%E0%B7%92%E0%B6%B8%E0%B7%8A+%E0%B6%B8%E0%B7%9C%E0%B6%9A%E0%B6%AF+%E0%B6%9A%E0%B6%BB%E0%B6%B1%E0%B7%8A%E0%B6%B1%E0%B7%9A%F0%9F%98%9C%F0%9F%92%AB;%E0%B6%B6%E0%B7%9C%E0%B6%A7%E0%B7%8A+%E0%B6%9C%E0%B7%90%E0%B6%B1+%E0%B6%B4%E0%B7%8A%E2%80%8D%E0%B6%BB%E0%B7%81%E0%B7%8A%E0%B6%B1%E0%B6%BA%E0%B6%9A%E0%B7%8A+%E0%B6%AD%E0%B7%92%E0%B6%BA%E0%B7%9A%E0%B6%AF%3F;%E0%B6%AD%E0%B7%92%E0%B6%BA%E0%B7%9A%E0%B6%B1%E0%B6%B8%E0%B7%8A+%E0%B6%B8%E0%B7%90%E0%B7%83%E0%B7%9A%E0%B6%A2%E0%B7%8A+%E0%B6%91%E0%B6%9A%E0%B6%9A%E0%B7%8A+%E0%B6%AF%E0%B7%8F%E0%B6%B1%E0%B7%8A%E0%B6%B1;94704101989)](https://git.io/typing-svg)
 
 > <a href="https://sites.google.com/view/rhiruu-queen-bot/home"><img src="https://img.shields.io/badge/Tutorial-Video-ff0000?style=for-the-badge&logo=youtube&logoColor=ff000000&link=https://www.youtube.com/c/BOTINDO" /><br>
 
