@@ -104,15 +104,15 @@ async function startGojoMdNx() {
        }
        let wm_fatih = { url : ppgc }
        if (pea[0].announce == true) {
-       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages !`, `༺Group Settings Change Message༻`, wm_fatih, [])
+       GojoMdNx.send5ButImg(pea[0].id, `「 🔥Group Settings Changed🔥 」\n\nThe Group Has Been Closed By Admin, Now Only Admin Can Send Messages🤫 !`, `🔥༺HIRUU༒QUEEN༻🔥`, wm_fatih, [])
        } else if(pea[0].announce == false) {
-       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages !`, `༺Group Settings Change Message༻`, wm_fatih, [])
+       GojoMdNx.send5ButImg(pea[0].id, `「 🔥Group Settings Changed🔥 」\n\nThe Group Has Been Opened By Admin, Now Participants Can Send Messages😜 !`, `🔥༺HIRUU༒QUEEN༻🔥`, wm_fatih, [])
        } else if (pea[0].restrict == true) {
-       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info !`, `༺Group Settings Change Message༻`, wm_fatih, [])
+       GojoMdNx.send5ButImg(pea[0].id, `「 🔥Group Settings Changed🔥 」\n\nGroup Info Has Been Restricted, Now Only Admin Can Edit Group Info😇 !`, `🔥༺HIRUU༒QUEEN༻🔥`, wm_fatih, [])
        } else if (pea[0].restrict == false) {
-       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info !`, `༺Group Settings Change Message༻`, wm_fatih, [])
+       GojoMdNx.send5ButImg(pea[0].id, `「 🔥Group Settings Changed🔥 」\n\nGroup Info Has Been Opened, Now Participants Can Edit Group Info😉 !`, `༺🔥༺HIRUU༒QUEEN༻🔥`, wm_fatih, [])
        } else {
-       GojoMdNx.send5ButImg(pea[0].id, `「 Group Settings Changed 」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*`, `༺Group Settings Change Message༻`, wm_fatih, [])
+       GojoMdNx.send5ButImg(pea[0].id, `「 🔥Group Settings Changed🔥 」\n\nGroup Subject Has Been Changed To *${pea[0].subject}*😎`, `🔥༺HIRUU༒QUEEN༻🔥`, wm_fatih, [])
      }
     })
 
@@ -150,11 +150,11 @@ Tol = await getBuffer(`https://hardianto.xyz/api/goodbye3?profile=${encodeURICom
 
 ⭐✑ Description: ${metadata.desc}
 
-⭐✑ Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!`} )
+⭐✑ Welcome To Our Comfortable Happy😋, Sometimes Loud😜, Usually Messy🤥, Full Of Love🥰, HOME😌!!\n\n🔥༺HIRUU༒QUEEN༻🔥`} )
                 } else if (anu.action == 'remove') {
                     GojoMdNx.sendMessage(anu.id, { image: Tol, contextInfo: { mentionedJid: [num] }, caption: `⭐✑ @${num.split("@")[0]} Left ${metadata.subject}
 
-⭐✑ I'm Not Sure If It Was A Goodbye Charm, But It Was Fun While It Lasted 😌✨` })
+⭐✑ I'm Not Sure If It Was A Goodbye Charm, But It Was Fun While It Lasted 😌✨\n\n🔥༺HIRUU༒QUEEN༻🔥` })
                 }
             }
         } catch (err) {
