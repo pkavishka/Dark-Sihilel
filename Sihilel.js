@@ -2152,7 +2152,7 @@ break
 		let { pinterest } = require('./lib/scraper')
                 anu = await pinterest(text)
                 result = anu[Math.floor(Math.random() * anu.length)]
-                GojoMdNx.sendMessage(m.chat, { image: { url: result }, caption: `🦄 Media Url : ${result}`, { quoted: m })
+                GojoMdNx.sendMessage(m.chat, { image: { url: result }, caption: `🦄 Media Url : '+result}`, { quoted: m })
             }
             break
 case 'webtonsearch': case 'webtoon':
