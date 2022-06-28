@@ -1448,7 +1448,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 reply(mess.success)
                 }
                 break
-            case 'tagall': case {
+            case 'tagall': {
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
@@ -2097,7 +2097,7 @@ break
 🦄 Author : ${anu.author.name}
 🦄 Channel : ${anu.author.url}
 🦄 Description : ${anu.description}
-🦄 Url : ${anu.url}`,			,
+🦄 Url : ${anu.url}`,
                     footer: GojoMdNx.user.name,
                     buttons: buttons,
                     headerType: 4
@@ -2152,7 +2152,7 @@ break
 		let { pinterest } = require('./lib/scraper')
                 anu = await pinterest(text)
                 result = anu[Math.floor(Math.random() * anu.length)]
-                GojoMdNx.sendMessage(m.chat, { image: { url: result }, caption: `🦄 Media Url : ${result.floor}`, { quoted: m })
+                GojoMdNx.sendMessage(m.chat, { image: { url: result }, caption: `🦄 Media Url : ${result}`, { quoted: m })
             }
             break
 case 'webtonsearch': case 'webtoon':
