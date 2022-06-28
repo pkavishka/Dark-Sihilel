@@ -28,23 +28,23 @@ global.footer = '©Sihilel.'
 global.ig = 'https://github.com/nexusNw'
 global.region = 'India, South India, Kerala'
 global.sc = 'https://chat.whatsapp.com/JJPj637jjvMFrMYqxVPTDa'
-global.myweb = '💯💯💯තාම බොට් හදලා ඉවර නෑ ඉක්මනට දෙන්නම්'
+global.myweb = '\n💯💯💯තාම බොට් හදලා ඉවර නෑ ඉක්මනට දෙන්නම්\n\n🔥༺HIRUU༒QUEEN༻🔥'
 global.packname = '❤️HIRUU-QUEEN❤️'
 global.author = '❤️S_I_H_I_L_E_L❤️'
 global.sessionName = 'session'
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
-    success: 'Done ✓',
-    admin: '♥️S+H♥️ ඇඩ්මින්ලට විතරයි මේක පුලුවන් ළමයෝ 🌝',
-    botAdmin: '♥️S+H♥️ ඇඩ්මින් දියන්කෝ මුලින් 😒',
-    owner: '♥️S+H♥ Owner ට විතරයි ළමයෝ ඕක පුලුවන් 🙏 ',
-    group: '♥️S+H♥️ group වල විතරයි ඕක😒',
-    private: '♥️S+H♥️ inbox විතරයි පුලුවන්🌝',
-    bot: '♥️S+H♥️ මේක මට විතරයි පුලුවන්😌👍 ඔයා පාඩුවේ ඉන්න 😒',
-    wait: '♥️S+H♥️ චුට්ටක් ඉන්න බබා 🌸🙏',
-    error: 'Error! Maybe Api Key Is Expired🤔!',
-    endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
+    success: 'Done🔥💯\n\n🔥༺HIRUU༒QUEEN༻🔥\n\n♥️S+H♥️',
+    admin: 'ඇඩ්මින්ලට විතරයි මේක පුලුවන් ළමයෝ 🌝\n\n🔥༺HIRUU༒QUEEN༻🔥\n\n♥️S+H♥️',
+    botAdmin: 'ඇඩ්මින් දියන්කෝ මුලින් 😒\n\n🔥༺HIRUU༒QUEEN༻🔥\n\n♥️S+H♥️',
+    owner: 'Owner ට විතරයි ළමයෝ ඕක පුලුවන් 🙏 \n\n🔥༺HIRUU༒QUEEN༻🔥\n\n♥️S+H♥️',
+    group: 'group වල විතරයි ඕක😒\n\n🔥༺HIRUU༒QUEEN༻🔥\n\n♥️S+H♥️',
+    private: 'inbox විතරයි පුලුවන්🌝\n\n🔥༺HIRUU༒QUEEN༻🔥\n\n♥️S+H♥️',
+    bot: 'මේක මට විතරයි පුලුවන්😌👍 ඔයා පාඩුවේ ඉන්න 😒\n\n🔥༺HIRUU༒QUEEN༻🔥\n\n♥️S+H♥️',
+    wait: 'චුට්ටක් ඉන්න බබා 🌸🙏\n\n🔥༺HIRUU༒QUEEN༻🔥\n\n♥️S+H♥️',
+    error: 'Error! Maybe Api Key Is Expired🤔!\n\n🔥༺HIRUU༒QUEEN༻🔥\n\n♥️S+H♥️',
+    endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours\n\n🔥༺HIRUU༒QUEEN༻🔥\n\n♥️S+H♥️',
 }
     global.limitawal = {
     premium: "Infinity",
