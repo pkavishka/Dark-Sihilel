@@ -2152,7 +2152,7 @@ break
 		let { pinterest } = require('./lib/scraper')
                 anu = await pinterest(text)
                 result = anu[Math.floor(Math.random() * anu.length)]
-                GojoMdNx.sendMessage(m.chat, { image: { url: result }, caption: '🦄 Media Url : result\n\n🔥༺HIRUU༒QUEEN༻🔥` }, { quoted: m })
+                GojoMdNx.sendMessage(m.chat, { image: { url: result }, caption: `🦄 Media Url : ${result.floor}`, { quoted: m })
             }
             break
 case 'webtonsearch': case 'webtoon':
@@ -2524,7 +2524,7 @@ case 'webtonsearch': case 'webtoon':
                 let [tgl, bln, thn] = text.split`,`
                 let anu = await primbon.rahasia_naga_hari(tgl, bln, thn)
                 if (anu.status == false) return reply(anu.message)
-                GojoMdNx.sendText(m.chat, `🦄 *Day Of Birth :* ${anu.message.hari_lahir}\n🦄 *Date Of Birth :* ${anu.message.tgl_lahir}\n🦄 *Dragon Day Direction :* ${anu.message.arah_naga_hari}\n🐦 *Notes :* ${anu.message.catatan}`, m)
+                GojoMdNx.sendText(m.chat, `🦄 *Day Of Birth :* ${anu.message.hari_lahir}\n🦄 *Date Of Birth :* ${anu.message.tgl_lahir}\n🦄 *Dragon Day Direction :* ${anu.message.arah_naga_hari}\n🦄 *Notes :* ${anu.message.catatan}`, m)
             }
             break
             case 'arahrejeki': case 'arahrezeki': {
@@ -3288,7 +3288,7 @@ reply(`Successfully Reported To The Owner\n\nPlease Make Sure The Bug Is Valid, 
 		GojoMdNx.sendMessage(from, { text: `Try for this!\n༺HIRUU༒QUEEN༻\n\nhttps://sites.google.com/view/hiruu-queen-bot/home` }, { quoted: m })
 	}
                     break
-                     case 'alive': case 'bot': case 'hiruu bot': case 'ඇලිව්': {
+                     case 'alive': case 'bot': case 'hiruu bot': {
                            	timestampe = speed();
 latensie = speed() - timestampe
  anu = ` `
@@ -3348,7 +3348,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 GojoMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
 break
-            case 'list': case 'menu': 'මෙනු': {
+            case 'list': case 'menu': {
             	timestampe = speed();
 latensie = speed() - timestampe
                 anu = ``
