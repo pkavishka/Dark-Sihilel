@@ -38,7 +38,7 @@ Add FFmpeg to PATH environment variable
 <!-- start via heroku -->
 <b><details><summary>𝐇𝐈𝐑𝐔𝐔 𝐐𝐔𝐄𝐄𝐍 𝐁𝐎𝐓 click here💯</summary></b>
 
-* 𝐇𝐈𝐑𝐔𝐔 𝐐𝐔𝐄𝐄𝐍 𝐁𝐎𝐓 ස්කෑන් කිරීමට 👉⚡ [Click Here](https://replit.com/@tik-toktok23/Hiruu-Queen-Bot-Qr-code-1?v=1)
+* 𝐇𝐈𝐑𝐔𝐔 𝐐𝐔𝐄𝐄𝐍 𝐁𝐎𝐓 ස්කෑන් කිරීමට 👉⚡ [Click Here](https://replit.com/@nexusNw)
 * fork කරලා ඔයාගේ session එක දාගන්න මේක ඔබන්න 👉⚡ [Click Here](https://github.com/Hiruu-Queen/Dark-Sihilel/fork)
 * Bot depoy කරන්න මේක ඔබන්න 👉⚡ [Click Here](https://heroku.com/deploy)
 * විනාඩි 5 ක් ඉන්න deploy වෙනකම් 🌝
