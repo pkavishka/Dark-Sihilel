@@ -200,11 +200,11 @@ module.exports = GojoMdNx = async (GojoMdNx, m, chatUpdate, store) => {
 	
 	//group target \\
 const reply = (teks) => {
-            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ❤️HIRUU-QUEEN❤️`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/gojo.jpg`),"sourceUrl": "https://sites.google.com/view/red-dragon-bot/home"}}}, { quoted: m})
+            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ❤️HIRUU-QUEEN❤️`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/Sihilel.jpg`),"sourceUrl": "https://sites.google.com/view/hiruu-queen-bot/home"}}}, { quoted: m})
         }
         
         const replay = (teks) => {
-            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ❤️HIRUU-QUEEN❤️`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/gojo.jpg`),"sourceUrl": "https://sites.google.com/view/red-dragon-bot/home"}}}, { quoted: m})
+            GojoMdNx.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": ` ${global.botname}`,"body": ` ❤️HIRUU-QUEEN❤️`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./GojoMedia/Sihilel.jpg`),"sourceUrl": "https://sites.google.com/view/hiruu-queen-bot/home"}}}, { quoted: m})
         }
 	
         //Public & Self\\
@@ -1165,10 +1165,10 @@ Please @${m.mentionedJid[0].split`@`[0]} To Type Accept/Reject`
             let orang = member[Math.floor(Math.random() * member.length)]
             let jodoh = member[Math.floor(Math.random() * member.length)]
             let jawab = `@${orang.split('@')[0]} ❤️ @${jodoh.split('@')[0]}
-Cieeee, What's Going On❤️💖👀`
+Congratulation, Lovely Couple ❤️💖👀`
             let menst = [orang, jodoh]
             let buttons = [
-                        { buttonId: '❤️', buttonText: { displayText: '❤️' }, type: 1 }
+                        { buttonId: '❤️', buttonText: { displayText: '💓' }, type: 1 }
                     ]
                     await GojoMdNx.sendButtonText(m.chat, buttons, jawab, GojoMdNx.user.name, m, {mentions: menst})
             }
@@ -3335,7 +3335,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }, {
                                 quickReplyButton: {
                                     displayText: '🛸List Menu🛸',
-                                    id: `${prefix}command`
+                                    id: `${prefix}listmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
@@ -3395,7 +3395,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                                 }, {
                                 quickReplyButton: {
                                     displayText: '🛸List Menu🛸',
-                                    id: `${prefix}command`
+                                    id: `${prefix}listmenu`
                                 }
                                 }, {
                                 quickReplyButton: {
@@ -3409,7 +3409,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 GojoMdNx.relayMessage(m.chat, template.message, { messageId: template.key.id })
                 }
                 break
-                case 'command': {
+                case 'command': case 'listmenu': {
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 listMessage :{
                     title: `Hi ${pushname}`,
@@ -4203,7 +4203,7 @@ break
 case 'thanksto': case 'tqto': case 'tqtt': case 'thank you': case 'tnx':
 var unicorn = await getBuffer(picak+'Developer')
 await GojoMdNx.send5ButImg(from, `` + '' + ' ', `
-I am Sihilel 😉🔥 Thanks to  ( 𝐇𝐈𝐑𝐔𝐔𝐔😘)
+Hey Thanks to use for my bot 😉💓 I am Sihilel 😉🔥 Speacial Thanks to  ( 𝐇𝐈𝐑𝐔𝐔𝐔😘)
 here is support to create this bot🔥🔥 she is my girl friend 😉😘 I love you hiruu😘😘
 !!!`,unicorn, [{"urlButton": {"displayText": "MY WEB😈","url": `${myweb}`}},{"urlButton": {"displayText": "BOT GROUP🎠","url": `${sc}`}},{"quickReplyButton": {"displayText": "🍜Donate🍜","id": 'donate'}},{"quickReplyButton": {"displayText": "⚡SIHILEL⚡","id": 'owner'}}] )
 break
